@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Jhonny Joseph Noblecilla Paredes — Person for Solutions. Estrategia, innovación, dirección y desarrollo de negocios.">
+<meta name="theme-color" content="#0b0d10">
+<title>Jhonny Joseph | Person for Solutions</title>
+<style>
+:root{--bg:#080a0d;--panel:#101318;--panel2:#14181e;--text:#f5f5f2;--muted:#a9adb4;--line:#292e36;--accent:#d8a84e;--accent2:#f1c76a;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(8,10,13,.82);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:.16em;font-size:.78rem}.brand span{color:var(--accent)}
+.navlinks{display:flex;gap:28px;font-size:.78rem;color:#c7cad0;text-transform:uppercase;letter-spacing:.12em}
+.navlinks a:hover{color:var(--accent2)}
+.menu{display:none;background:none;border:1px solid var(--line);color:#fff;border-radius:8px;padding:8px 10px}
+.hero{min-height:100vh;display:grid;align-items:center;position:relative;overflow:hidden;padding:120px 0 70px}
+.hero:before{content:"";position:absolute;width:650px;height:650px;border-radius:50%;right:-250px;top:80px;background:radial-gradient(circle,rgba(216,168,78,.14),transparent 68%);filter:blur(4px)}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:70px;align-items:center;position:relative}
+.kicker{color:var(--accent2);font-size:.78rem;letter-spacing:.25em;text-transform:uppercase;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(3.4rem,8vw,7.4rem);line-height:.9;letter-spacing:-.055em;max-width:900px}
+h1 span{display:block;color:#cfd2d7}
+.hero-copy{font-size:clamp(1.05rem,2vw,1.35rem);color:#c0c4ca;max-width:670px;margin:30px 0 34px}
+.buttons{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:8px;border:1px solid var(--line);font-weight:800;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;transition:.2s}
+.btn.primary{background:var(--accent);color:#0a0b0d;border-color:var(--accent)}
+.btn:hover{transform:translateY(-2px);border-color:var(--accent)}
+.portrait{min-height:570px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,#1b2027,#0d0f13);position:relative;overflow:hidden;display:flex;align-items:end;padding:28px}
+.portrait:before{content:"JJ";position:absolute;font-size:15rem;font-weight:900;letter-spacing:-.1em;color:rgba(216,168,78,.07);top:35px;left:25px}
+.portrait-card{position:relative;width:100%;padding:24px;border:1px solid rgba(255,255,255,.11);background:rgba(8,10,13,.72);backdrop-filter:blur(12px);border-radius:18px}
+.portrait-card strong{font-size:1.25rem}.portrait-card small{display:block;color:var(--muted);margin-top:5px}
+section{padding:110px 0;border-top:1px solid rgba(255,255,255,.06)}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:48px}
+.eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent2);font-weight:800}
+h2{font-size:clamp(2.3rem,5vw,4.5rem);line-height:.98;letter-spacing:-.045em;margin-top:10px}
+.lead{max-width:560px;color:var(--muted);font-size:1.05rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:30px 22px;border-right:1px solid var(--line)}.stat:last-child{border:0}
+.stat b{font-size:3rem;line-height:1;display:block;color:var(--accent2)}.stat span{display:block;color:var(--muted);margin-top:8px;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px;min-height:230px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#5b4a2c}
+.num{color:var(--accent);font-weight:800;font-size:.8rem}.card h3{font-size:1.4rem;margin:32px 0 10px}.card p{color:var(--muted);font-size:.93rem}
+.industries{display:flex;flex-wrap:wrap;gap:10px}.pill{border:1px solid var(--line);background:var(--panel);padding:13px 17px;border-radius:999px;color:#d7d9dd;font-size:.88rem}
+.manifesto{background:linear-gradient(135deg,#11151a,#0a0c0f);border:1px solid var(--line);border-radius:28px;padding:70px;position:relative;overflow:hidden}
+.manifesto:after{content:"";position:absolute;right:-90px;bottom:-140px;width:420px;height:420px;border-radius:50%;border:1px solid rgba(216,168,78,.18);box-shadow:0 0 0 60px rgba(216,168,78,.025),0 0 0 120px rgba(216,168,78,.02)}
+.manifesto h2{max-width:850px}.quote{font-size:1.2rem;color:#bfc3c9;max-width:760px;margin-top:25px}
+.timeline{display:grid;gap:0}.time{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:28px 0;border-bottom:1px solid var(--line)}.time .year{color:var(--accent2);font-weight:800}.time h3{font-size:1.25rem}.time p{color:var(--muted);margin-top:5px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}.contact-box{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:30px}.contact-line{display:flex;justify-content:space-between;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}.contact-line:last-child{border:0}.contact-line span{color:var(--muted)}
+footer{padding:35px 0;color:#777d86;border-top:1px solid var(--line);font-size:.82rem}
+@media(max-width:900px){.navlinks{display:none}.menu{display:block}.hero-grid,.contact{grid-template-columns:1fr}.portrait{min-height:430px}.cards{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.section-head{display:block}.lead{margin-top:20px}.manifesto{padding:40px 25px}}
+@media(max-width:560px){.container{width:min(calc(100% - 28px),var(--max))}.hero{padding-top:105px}.cards{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)!important}.stat:last-child{border-bottom:0!important}.time{grid-template-columns:1fr;gap:5px}h1{font-size:3.25rem}.portrait{min-height:360px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav">
+    <a class="brand" href="#inicio">JHONNY <span>JOSEPH</span></a>
+    <div class="navlinks">
+      <a href="#perfil">Perfil</a><a href="#soluciones">Soluciones</a><a href="#experiencia">Experiencia</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a>
+    </div>
+    <button class="menu" aria-label="Abrir menú" onclick="document.querySelector('.navlinks').style.display=document.querySelector('.navlinks').style.display==='flex'?'none':'flex'">☰</button>
+  </div>
+</nav>
+
+<main id="inicio">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">Person for Solutions · Ecuador / International</div>
+      <h1>JHONNY<br><span>JOSEPH</span></h1>
+      <p class="hero-copy">Estrategia, innovación, dirección y desarrollo de negocios. Transformo desafíos empresariales en oportunidades y soluciones ejecutables.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://wa.me/593993038752" target="_blank">Hablemos</a>
+        <a class="btn" href="#perfil">Conocer mi perfil</a>
+      </div>
+    </div>
+    <div class="portrait" aria-label="Espacio para fotografía profesional">
+      <div class="portrait-card"><strong>PERSON FOR SOLUTIONS</strong><small>Crear · Innovar · Dirigir · Resolver</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="perfil">
+<div class="container">
+  <div class="section-head"><div><div class="eyebrow">01 · Perfil</div><h2>Experiencia que<br>se convierte en acción.</h2></div><p class="lead">Economista y profesional orientado a la dirección, administración, desarrollo de negocios y búsqueda de soluciones para diferentes industrias.</p></div>
+  <div class="stats">
+    <div class="stat"><b>15+</b><span>Años de experiencia</span></div>
+    <div class="stat"><b>20+</b><span>Personas lideradas</span></div>
+    <div class="stat"><b>$24M</b><span>Presupuestos gestionados</span></div>
+    <div class="stat"><b>EC / INT</b><span>Visión nacional e internacional</span></div>
+  </div>
+</div>
+</section>
+
+<section id="soluciones">
+<div class="container">
+  <div class="section-head"><div><div class="eyebrow">02 · Soluciones</div><h2>¿Qué puedo hacer<br>por tu empresa?</h2></div><p class="lead">Un enfoque práctico: entender el problema, encontrar la oportunidad y convertir la estrategia en ejecución.</p></div>
+  <div class="cards">
+    <article class="card"><span class="num">01</span><h3>Estrategia</h3><p>Analizar escenarios, ordenar prioridades y definir hacia dónde debe avanzar un negocio.</p></article>
+    <article class="card"><span class="num">02</span><h3>Dirección</h3><p>Convertir objetivos en acciones, equipos, seguimiento y resultados.</p></article>
+    <article class="card"><span class="num">03</span><h3>Innovación</h3><p>Identificar oportunidades, productos, mercados y modelos de negocio.</p></article>
+    <article class="card"><span class="num">04</span><h3>Soluciones</h3><p>Conectar información, personas, recursos y oportunidades para resolver problemas reales.</p></article>
+  </div>
+</div>
+</section>
+
+<section id="proyectos">
+<div class="container">
+  <div class="section-head"><div><div class="eyebrow">03 · Alcance</div><h2>Experiencia<br>multiindustria.</h2></div><p class="lead">Capacidad para comprender diferentes modelos de negocio y adaptar la estrategia a cada realidad.</p></div>
+  <div class="industries">
+    <span class="pill">Agricultura</span><span class="pill">Acuicultura</span><span class="pill">Agroindustria</span><span class="pill">Retail</span><span class="pill">Comercialización</span><span class="pill">Desarrollo inmobiliario</span><span class="pill">Servicios</span><span class="pill">Nuevos negocios</span>
+  </div>
+  <div style="height:34px"></div>
+  <div class="manifesto">
+    <div class="eyebrow">PERSON FOR SOLUTIONS</div>
+    <h2>No vendo solamente servicios.<br><span style="color:var(--accent2)">Busco soluciones.</span></h2>
+    <p class="quote">“Cada empresa tiene problemas diferentes. Mi trabajo es entenderlos, encontrar oportunidades y convertir las ideas en acciones.”</p>
+  </div>
+</div>
+</section>
+
+<section id="experiencia">
+<div class="container">
+  <div class="section-head"><div><div class="eyebrow">04 · Trayectoria</div><h2>Crear.<br>Innovar.<br>Dirigir.</h2></div><p class="lead">Una trayectoria construida alrededor de la gestión, el aprendizaje continuo y la búsqueda de resultados.</p></div>
+  <div class="timeline">
+    <div class="time"><div class="year">FORMACIÓN</div><div><h3>Economista · Universidad Técnica de Machala</h3><p>Formación profesional orientada a economía y gestión.</p></div></div>
+    <div class="time"><div class="year">EXPERIENCIA</div><div><h3>Más de 15 años en diferentes entornos empresariales</h3><p>Experiencia general en administración, dirección, gestión y desarrollo de oportunidades.</p></div></div>
+    <div class="time"><div class="year">LIDERAZGO</div><div><h3>Equipos y presupuestos de alta responsabilidad</h3><p>Liderazgo de equipos de más de 20 personas y gestión de presupuestos de hasta $24 millones anuales.</p></div></div>
+    <div class="time"><div class="year">HOY</div><div><h3>PERSON FOR SOLUTIONS</h3><p>Una marca personal enfocada en crear, innovar, dirigir y conectar soluciones.</p></div></div>
+  </div>
+</div>
+</section>
+
+<section id="contacto">
+<div class="container">
+  <div class="section-head"><div><div class="eyebrow">05 · Contacto</div><h2>¿Tienes un problema?<br><span style="color:var(--accent2)">Hablemos de la solución.</span></h2></div><p class="lead">Disponible para oportunidades, proyectos, alianzas y conversaciones empresariales.</p></div>
+  <div class="contact">
+    <div class="contact-box">
+      <div class="contact-line"><span>WhatsApp</span><a href="https://wa.me/593993038752" target="_blank">+593 99 303 8752 ↗</a></div>
+      <div class="contact-line"><span>Email</span><a href="mailto:jhonnynopa@gmail.com">jhonnynopa@gmail.com ↗</a></div>
+      <div class="contact-line"><span>LinkedIn</span><a href="https://ec.linkedin.com/in/jhonny-joseph-noblecilla-paredes-42a051305" target="_blank">Perfil profesional ↗</a></div>
+      <div class="contact-line"><span>Web</span><span>jhonnyjoseph.netlify.app</span></div>
+    </div>
+    <div>
+      <p style="font-size:1.2rem;color:#d9dce1">Lo que hoy parece un problema puede convertirse en la próxima oportunidad.</p>
+      <div class="buttons" style="margin-top:25px"><a class="btn primary" href="https://wa.me/593993038752?text=Hola%20Jhonny,%20quiero%20conversar%20sobre%20un%20proyecto." target="_blank">Contactarme por WhatsApp</a></div>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer><div class="container">© 2026 Jhonny Joseph Noblecilla Paredes · PERSON FOR SOLUTIONS</div></footer>
+</body>
+</html>
